@@ -9,14 +9,16 @@ longtitude.
 #include<stdio.h>
 #include<math.h>
 
-double degree_to_Radain(double value);
-
+double degree_to_Radain(double value)
+{
+  return value * M_PI / 180;
+}
 int main()
 {
  
   double lon1,p1,lon2,p2;
-  double distance = 0; delta = 0;
-  const int Radius = 6371;
+  double distance = 0 , delta = 0;
+  const double Radius = 6371.0;
 
   printf("Enter the latitude_1 in the degree -90 to 90: ");
   scanf("%lf", &p1);
@@ -35,14 +37,14 @@ int main()
 
   delta = lon2 - lon1;
 
-  distance = (acos(sin(p1)*sin(p2)+ cos(p2)*cos(p2)*cos(delta))*Radius);
+  distance = (acos(sin(p1) * sin(p2) + cos(p1) * cos(p2) * cos(delta)) * Radius);
 
-  prinft("Laocation Distance \n");
+  printf("Location Distance \n");
   printf("===================\n");
 
   printf("origin = %lf %lf\n",lon1,p1);
   printf("Distination = %lf %lf\n",lon2,p2);
   printf("Distance = %lf\n",distance);
-  
+
     return 0;
 }
