@@ -28,7 +28,13 @@ int main()
   printf("Enter the lontitude_2 in the degree -180 to 180: ");
   scanf("%lf", &lon2);
 
+  lon1 = degree_to_Radain(lon1);
+  p1 = degree_to_Radain(p1);
+  lon2 = degree_to_Radain(lon2);
+  p2 = degree_to_Radain(p2);
+
   
+
 
 
   
