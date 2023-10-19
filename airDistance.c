@@ -22,6 +22,15 @@ int main()
   scanf("%lf", &p1);
   printf("Enter the lontitide_1 in degree -180 to 180: ");
   scanf("%lf", &lon1);
+
+  printf("Enter the latitude_2 in the degree -90 to 90: ");
+  scanf("%lf", &p2);
+  printf("Enter the lontitude_2 in the degree -180 to 180: ");
+  scanf("%lf", &lon2);
+
+  
+
+
   
 
 
