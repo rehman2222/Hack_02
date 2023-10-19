@@ -33,7 +33,9 @@ int main()
   lon2 = degree_to_Radain(lon2);
   p2 = degree_to_Radain(p2);
 
-  
+  delta = lon2 - lon1;
+
+  distance = (acos(sin(p1)*sin(p2)+ cos(p2)*cos(p2)*cos(delta))*Radius);
 
 
 
