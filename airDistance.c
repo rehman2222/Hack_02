@@ -37,28 +37,12 @@ int main()
 
   distance = (acos(sin(p1)*sin(p2)+ cos(p2)*cos(p2)*cos(delta))*Radius);
 
+  prinft("Laocation Distance \n");
+  printf("===================\n");
 
-
+  printf("origin = %lf %lf\n",lon1,p1);
+  printf("Distination = %lf %lf\n",lon2,p2);
+  printf("Distance = %lf\n",distance);
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
